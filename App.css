@@ -1,0 +1,102 @@
+.App {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .addTask {
+    height: 30vh;
+    background-color: rgb(163, 62, 163);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+    background-color: beige;
+    
+  }
+  .task {
+    width: 500px;
+    height: 50px;
+    /* display: flex; */
+    margin: 15px;
+    color: rgb(112, 6, 112);
+    font-style: italic;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .addTask button{
+    background-color:bisque;
+  }
+  
+  .task button {
+    width: auto;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: bisque;
+  }
+  .react-csv-link {
+    /* Your styles for the CSVLink component */
+    /* Example styles */
+    color:rgb(112, 6, 112);
+    background-color: hsl(120, 60%, 70%);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .csv-button{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  input[type="checkbox"] {
+    appearance: none; 
+    width: 20px; 
+    height: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+    cursor: pointer;
+    position: relative;
+  }
+  
+  
+  input[type="checkbox"]:checked {
+    background-color:purple; 
+  }
+  
+  
+  input[type="checkbox"]::after {
+    content: "\2713"; 
+    font-size: 14px;
+    color: #fff; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  
+  
+  input[type="checkbox"]:checked::after {
+    transform: translate(-50%, -50%) scale(1);
+  }
